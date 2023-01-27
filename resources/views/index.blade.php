@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.png" />
     <title>Winter Is Coming</title>
     <video id="myVideo" autoplay loop muted>
         <source src="/videos/inverno.mp4" type="video/mp4">
@@ -55,13 +56,18 @@
             transform: scale(1.1);
             box-shadow: 2px 2px 10px #ccc;
         }
+
+        #btns {
+            text-align: center;
+            margin-top: 500px;
+        }
     </style>
 </head>
 
 <body>
     <h1>WINTER IS COMING ?</h1>
 
-    <div style="text-align: center; margin-top: 500px;">
+    <div id="btns">
         <button style="background-color: #ff0000;  margin: 30px;" onclick="votar('sim')">SIM</button>
         <button style="background-color: #00a2ff;  margin: 30px;" onclick="votar('nao')">NÃO</button>
     </div>
